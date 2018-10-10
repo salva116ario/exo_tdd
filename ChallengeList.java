@@ -21,6 +21,10 @@ public class ChallengeList {
   */
   public static boolean commenceFini(String mot){
     // TODO @A
+    mot = mot.toUpperCase();
+    if ( mot.substring(0,2).equals(mot.substring(mot.length()-2,mot.length())) ) {
+      return true;
+    }
     return false;
   }
 
@@ -49,7 +53,16 @@ public class ChallengeList {
   **/
   public static String tarif(int age){
     // TODO @A
-    return null;
+    if (age < 0) {
+     return "erreur";
+   }
+   if (age <= 3) {
+     return "gratuit";
+   }
+   if (age > 3 && age < 12) {
+     return "reduit";
+   }
+   return "plein";
   }
 
   /**
