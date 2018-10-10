@@ -83,8 +83,21 @@ public class ChallengeList {
   * parcourt le tableau de noms et retourne une liste de tous les noms qui ont une longueur > 2
   **/
   public static String[] filtreShort(String[] noms){
-    // TODO @A
-    return null;
+    int compteur = 0;
+       for (String n : noms) {
+           if (n.length() > 2) {
+               compteur ++;
+           }
+       }
+       String[] listeFiltree = new String[compteur];
+       compteur = 0;
+       for (String n : noms) {
+           if (n.length() > 2) {
+               listeFiltree[compteur] = n;
+               compteur ++;
+           }
+       }
+       return listeFiltree;
   }
 
   /**
