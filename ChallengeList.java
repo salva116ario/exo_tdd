@@ -3,8 +3,8 @@ public class ChallengeList {
   /**
   * retourne la moyenne de a et de b
   */
-  public static int moyenne(int a, int b){
-    // TODO @A
+  public static double moyenne(int a, int b){
+    // SALVA @A
     return 0;
   }
 
@@ -32,7 +32,7 @@ public class ChallengeList {
   */
   public static boolean nonMonotone(String mot){
     // TODO @B
-	  
+
 	  //blabla
     return false;
   }
