@@ -31,13 +31,13 @@ public class ChallengeList {
   */
   public static boolean nonMonotone(String mot){
     // TODO @B
-
-<<<<<<< HEAD
-	  //blablaqsdqsdq
-=======
-	  //blabla
->>>>>>> 918fae49828e77169110f94460a51c4d155f16b2
-    return false;
+    char c;
+    for (i=-1; i<= mot.lenght ; i++){
+      if (mot.charAt(i) != c){
+        return true;
+      }
+      else return false;
+    }
   }
 
   /**
