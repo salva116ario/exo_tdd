@@ -20,7 +20,10 @@ public class ChallengeList {
   * ex "ABCDDFAB" : true
   */
   public static boolean commenceFini(String mot){
-    // TODO @A
+    mot = mot.toUpperCase();
+    if ( mot.substring(0,2).equals(mot.substring(mot.length()-2,mot.length())) ) {
+      return true;
+    }
     return false;
   }
 
