@@ -4,7 +4,7 @@ public class ChallengeList {
   * retourne la moyenne de a et de b
   */
   public static double moyenne(int a, int b){
-    return (a+b)/2;
+    return (a+b)/2.0;
   }
 
   /**
@@ -35,13 +35,13 @@ public class ChallengeList {
   */
   public static boolean nonMonotone(String mot){
     // TODO @B
-    char c;
-    for (i=-1; i<= mot.lenght() ; i++){
-      if (mot.charAt(i) != c){
-        return true;
-      }
-      else return false;
-    }
+    char c = mot.charAt(0);
+    for (i=1; i < mot.lenght() ; i++) {
+        if (mot.charAt(i) != c){
+                return true;
+            }
+        }
+    return false;
   }
 
   /**
@@ -54,15 +54,15 @@ public class ChallengeList {
   public static String tarif(int age){
     // TODO @A
     if (age < 0) {
-     return "erreur";
-   }
-   if (age <= 3) {
-     return "gratuit";
-   }
-   if (age > 3 && age < 12) {
-     return "reduit";
-   }
-   return "plein";
+          return "erreur";
+         }
+    if (age <= 3) {
+          return "gratuit";
+         }
+    if (age <= 12) {
+          return "reduit";
+         }
+    return "plein";
   }
 
   /**
