@@ -97,7 +97,22 @@ public class ChallengeList {
   **/
   public static String[] filtreShort(String[] noms){
     // TODO @A
-    return null;
+    int compteur = 0;
+        for (String n : noms) {
+            if (n.length() > 2) {
+                compteur ++;
+            }
+        }
+        String[] listeFiltree = new String[compteur];
+        compteur = 0;
+        for (String n : noms) {
+            if (n.length() > 2) {
+                listeFiltree[compteur] = n;
+                compteur ++;
+            }
+        }
+
+        return listeFiltree;
   }
 
   /**
