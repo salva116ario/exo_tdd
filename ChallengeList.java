@@ -20,10 +20,7 @@ public class ChallengeList {
   * ex "ABCDDFAB" : true
   */
   public static boolean commenceFini(String mot){
-    mot = mot.toUpperCase();
-    if ( mot.substring(0,2).equals(mot.substring(mot.length()-2,mot.length())) ) {
-      return true;
-    }
+    // TODO @A
     return false;
   }
 
@@ -45,24 +42,14 @@ public class ChallengeList {
 
   /**
   * retourne le tarif associé à l'âge :
-  * "gratuit" pour les moins de 3 ans
+  * "gratuit" pourles moins de 3 ans.
   * "reduit" pour les 3 à 12 ans
   * "plein" pour les autres
   * "erreur" si age négatif
   **/
   public static String tarif(int age){
-
-    if (age < 0) {
-      return "erreur";
-    }
-    if (age <= 3) {
-      return "gratuit";
-    }
-    if (age > 3 && age < 12) {
-      return "reduit";
-    }
-    return "plein";
-
+    // TODO @A
+    return null;
   }
 
   /**
@@ -97,22 +84,7 @@ public class ChallengeList {
   **/
   public static String[] filtreShort(String[] noms){
     // TODO @A
-    int compteur = 0;
-        for (String n : noms) {
-            if (n.length() > 2) {
-                compteur ++;
-            }
-        }
-        String[] listeFiltree = new String[compteur];
-        compteur = 0;
-        for (String n : noms) {
-            if (n.length() > 2) {
-                listeFiltree[compteur] = n;
-                compteur ++;
-            }
-        }
-
-        return listeFiltree;
+    return null;
   }
 
   /**
@@ -120,6 +92,8 @@ public class ChallengeList {
   **/
   public static String[] filtreLetter(String[] noms, char lettre){
     // TODO @B
+    char c = string.chaAt(0);
+
     return null;
   }
 
