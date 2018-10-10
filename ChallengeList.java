@@ -4,8 +4,7 @@ public class ChallengeList {
   * retourne la moyenne de a et de b
   */
   public static double moyenne(int a, int b){
-    // SALVA @A
-    return 0;
+    return (a+b)/2;
   }
 
   /**
