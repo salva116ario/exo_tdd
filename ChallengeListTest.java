@@ -14,6 +14,9 @@ public class ChallengeListTest{
 
   public static void testPerimetreCarre(){
     // TODO @A
+    assertEquals("Test périmètre 4", 16, perimetreCarre(4));
+    assertEquals("Test périmètre 0", 0, perimetreCarre(0));
+
   }
 
   public static void testCommenceFini(){
@@ -22,6 +25,9 @@ public class ChallengeListTest{
 
   public static void testNonMonotone(){
     // TODO @A
+    assertEquals("Test Non Monotone AAAAAA", "AAAAA", false);
+    assertEquals("Test Non Monotone AACAAACA", "AACAAACA", true);
+
   }
 
   public static void testTarif(){
@@ -71,6 +77,15 @@ public class ChallengeListTest{
     }
     else {
       throw new Error("\nKO!! >> "+message+" (exp : "+Arrays.toString(expected)+", res : "+Arrays.toString(res)+")");
+    }
+  }
+
+  public static void assertEquals(String message, String expected, String res){
+    if (res.equals(expected)) {
+      System.out.println("\nOK >> "+message);
+    }
+    else {
+      throw new Error("\nKO!! >> "+message+" (exp : "+expected+", res : "+res+")");
     }
   }
 
