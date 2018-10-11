@@ -107,7 +107,32 @@ public class ChallengeList {
     // TODO @B
     char c = string.chaAt(0);
 
-    return null;
+    return null;public static String[] filtreLetter(String[] noms, char lettre){
+
+		int increment = 0;
+		
+		
+		
+		for (int i=0; i<noms.length; i++) {
+			if (noms[i].charAt(0)==lettre) {
+				increment ++;
+			}
+		}
+		String[] nouveauTableau = new String[increment];
+		
+		int compteur=0;
+			for (int i=0; i<noms.length; i++) {
+			
+			if (noms[i].charAt(0)==lettre) {
+				nouveauTableau[compteur] = noms[i];
+				compteur++;
+			}
+		}
+		return nouveauTableau;
+	}
+
+}
+
   }
 
 
